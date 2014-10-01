@@ -1,0 +1,116 @@
+<template name="dashboard">
+  <br><br>
+
+
+  <form class="form-horizontal">
+    <fieldset>
+
+    <!-- Form Name -->
+    <legend class="text-center">NBA Fantasy Draft Options 2014</legend>
+    <!-- Text input-->
+        <p class="text-center">**Note that this site was built in a hurry, security and validations are minimal. Please don't try to break the system.</p><br>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="name">What's your name?</label>
+      <div class="col-md-4">
+      <input id="name" name="name" type="text" placeholder="Real name please" class="form-control input-md" required="">
+
+      </div>
+    </div>
+
+    <!-- Select Basic -->
+    <br>
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="one">1. When should we determine draft order?</label>
+      <div class="col-md-4">
+        <select id="one" name="one" class="form-control">
+          <option value="0">no preference</option>
+          <option value="a">1 hour before the draft (default)</option>
+          <option value="b">2 days before the draft</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <!-- Select Basic -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="two">2. How much should the buy-in amount be?</label>
+      <div class="col-md-4">
+        <select id="two" name="two" class="form-control">
+          <option value="0">no preference</option>
+          <option value="a">HKD 400 (default)</option>
+          <option value="b">HKD 600</option>
+        </select>
+        <p>Payout Calculations:
+          <img src="payouts.png">
+
+        </p>
+      </div>
+    </div>
+    <br>
+    <!-- Select Basic -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="three">3. How should we distribute the pot?</label>
+      <div class="col-md-4">
+        <select id="three" name="three" class="form-control">
+          <option value="0">no preference</option>
+          <option value="a">Option a</option>
+          <option value="b">Option b</option>
+        </select>
+        <p>options:</p>
+        <img src="options.png">
+      </div>
+    </div>
+    <br>
+    <!-- Select Basic -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="four">4. What should the 9th category be? <br>(first 8: PTS/REB/ASTS/STLS/BLKS/FG%/FT%/3PTS)</label>
+      <div class="col-md-4">
+        <select id="four" name="four" class="form-control">
+          <option value="0">no preference</option>
+          <option value="a">Turnovers (default)</option>
+          <option value="b">Three point %</option>
+        </select>
+      </div>
+    </div>
+    <br>
+
+    <!-- Select Basic -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="five">5. How many wins per week?</label>
+      <div class="col-md-4">
+        <select id="five" name="five" class="form-control">
+          <option value="0">no preference</option>
+          <option value="a">1 win per category (defaut)</option>
+          <option value="b">1 win per week</option>
+        </select>
+        <img src="why.png">
+      </div>
+    </div>
+    <br>
+
+    <!-- Select Basic -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="six">6. Trade Review</label>
+      <div class="col-md-4">
+        <select id="six" name="six" class="form-control">
+          <option value="0">no preference</option>
+          <option value="a">league vote (default)</option>
+          <option value="b">commissioner decision (only trades involving collusion will be vetoed)</option>
+        </select>
+      </div>
+    </div>
+    <br>
+
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="button">You can only submit once</label>
+      <div class="col-md-4">
+        <button id="finalbutton" name="button" class="btn btn-primary">submit</button>
+      </div>
+    </div>
+
+    </fieldset>
+    </form>
+    <br>
+
+</template>
